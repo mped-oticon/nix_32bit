@@ -12,7 +12,7 @@ test: main32 main64
 
 # We assume we're on a native amd64 machine
 main64: main.c
-	gcc -o main64 main.c
+	$(CC) -o main64 main.c
 
 main32: main.c
-	gcc -m32 -o main32 main.c
+	$(CC) -m32 -o main32 main.c
